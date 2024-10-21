@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>form with css</title>
+
+    <style>
+        body {
+            background-color: #010118;
+            /* background-image: url('https://wallpaperaccess.com/full/871130.jpg'); */
+            width: 100%;
+        }
+
+        hr {
+            color: rgb(51, 2, 97);
+            background-color: rgb(71, 9, 129);
+            width: 100%;
+            border-color: rgb(101, 20, 176);
+
+
+        }
+
+        .nnn {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 400px;
+            background-color: rgb(186, 177, 177);
+            /* color: rgb(233, 229, 229); */
+            padding: 20px;
+            margin: 50px auto;
+            border-radius: 8px;
+            box-shadow: 10px 150px 150px rgb(231, 231, 231);
+            /* background-image: url('https://th.bing.com/th/id/OIP.E_Au2quNiK6LJ2JJ0enzbwHaEo?w=297&h=185&c=7&r=0&o=5&dpr=1.4&pid=1.7') */
+            
+        }
+
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            margin-bottom: 5px;
+            margin-left: 10px;
+            display: block;
+
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] ,
+        input[type="Gender"],
+        input[type="date"],
+        input[type="radio"],
+         textarea {
+            box-sizing: 700px;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+
+            width: 100%;
+            padding: 10px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #m {
+
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            margin: 10px 0;
+
+        }
+        .s{
+            border-radius: 4px;
+            width: 100%;
+            padding: 10px;
+            cursor: pointer;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nnn">
+
+        <h1 align="center">Application form </h1>
+        <!-- <hr > -->
+
+        <form class="css" action="form.php">
+
+            <label for="name"> Name:</label>
+            <input type="text" name="name" id="name ">
+
+            <label for="number ">Phone no:</label>
+            <input type="number" name="number " id="number">
+
+            <label for="Email ">Email: </label>
+            <input type="email" name="Email" id="Email">
+
+            <label for="Gender"> Gender: </label>
+
+            <div id="m">
+               <label for="male"><font>male</font></label> <input type="radio" class="s" name="gender" id="male">   
+                
+                <label for="female"><font>female</font></label><input class="s" type="radio" name="gender" id="female">   
+                
+               <label for="other"><font>other</font></label> <input class="s" type="radio" name="gender" id="other">   
+                
+            </div>
+
+            <label for="Date"> Date:</label>
+            <input type="date" name="Date " id="Date">
+
+            <label for="Address">Address:</label>
+            <textarea name="" id="Address" cols="50" rows="5" placeholder="Address"> </textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+    </div>
+</body>
+
+</html>
